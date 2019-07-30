@@ -26,6 +26,8 @@
  */
 
 #include <sys/sysinfo.h>
+#include <android-base/logging.h>
+#include <android-base/properties.h>
 
 #include "property_service.h"
 
@@ -33,6 +35,8 @@ char const *heapstartsize;
 char const *heapgrowthlimit;
 char const *heapsize;
 char const *heapminfree;
+
+using android::init::property_set;
 
 void check_device()
 {
