@@ -125,7 +125,10 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
-    gps.msm8952
+    gps.msm8952 \
+    libcurl \
+    libgnss \
+    libgnsspps
 
 PRODUCT_PACKAGES += \
     flp.conf \
